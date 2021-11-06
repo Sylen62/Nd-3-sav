@@ -1,0 +1,58 @@
+{
+  "furniture": [
+    {
+      "id": 1,
+      "title": "Table",
+      "type": "Drink Table",
+      "price": 300,
+      "img": "https://www.peppermillinteriors.com/image/catalog/products/03210%20Victorian%20Mahogany%20Drinks%20Table/vintage-mahogany-drinks-table.jpg",
+      "location": {
+        "country": "Lithuania",
+        "city": "Vilnius",
+        "street": "Stalių g. 3"
+      },
+      "owner": {
+        "fullname": "Justas Peldžius",
+        "mobile": "868686868",
+        "address": "Justo g. 26",
+        "email": "justas@paštas.lt"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Chair",
+      "type": "Dining chair",
+      "price": 80,
+      "img": "https://www.1825interiors.com.au/media/catalog/product/cache/9900eac5e8c627334c283e575508ca44/1/8/1825_nomad_dining_chair_salt_pepper_web.jpg",
+      "location": {
+        "country": "Lithuania",
+        "city": "Vilnius",
+        "street": "Kėdžių g. 15A"
+      },
+      "owner": {
+        "fullname": "Justas Peldžius",
+        "mobile": "868686868",
+        "address": "Justo g. 26",
+        "email": "justas@paštas.lt"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Sofa",
+      "type": "Sectional sofa",
+      "price": 1300,
+      "img": "https://homefurn.com/images/thumbs/0035853_cooper-sectional-sofa-off-white_850.jpeg",
+      "location": {
+        "country": "Lithuania",
+        "city": "Vilnius",
+        "street": "Sofų g. 12"
+      },
+      "owner": {
+        "fullname": "Justas Peldžius",
+        "mobile": "868686868",
+        "address": "Justo g. 26",
+        "email": "justas@paštas.lt"
+      }
+    }
+  ]
+}
