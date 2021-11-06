@@ -12,10 +12,10 @@
         "street": "Stalių g. 3"
       },
       "owner": {
-        "fullname": "Justas Peldžius",
-        "mobile": "868686868",
-        "address": "Justo g. 26",
-        "email": "justas@paštas.lt"
+        "fullname": "Jėzus Batonas",
+        "mobile": "95389234",
+        "address": "Marijos g. 3",
+        "email": "jėzusbat@paštas.lt"
       }
     },
     {
@@ -26,14 +26,14 @@
       "img": "https://www.1825interiors.com.au/media/catalog/product/cache/9900eac5e8c627334c283e575508ca44/1/8/1825_nomad_dining_chair_salt_pepper_web.jpg",
       "location": {
         "country": "Lithuania",
-        "city": "Vilnius",
+        "city": "Kaunas",
         "street": "Kėdžių g. 15A"
       },
       "owner": {
-        "fullname": "Justas Peldžius",
-        "mobile": "868686868",
-        "address": "Justo g. 26",
-        "email": "justas@paštas.lt"
+        "fullname": "Kedys Violetinis",
+        "mobile": "923482934",
+        "address": "Kėdžių g. 15A",
+        "email": "kėdysvio@paštas.lt"
       }
     },
     {
@@ -44,14 +44,50 @@
       "img": "https://homefurn.com/images/thumbs/0035853_cooper-sectional-sofa-off-white_850.jpeg",
       "location": {
         "country": "Lithuania",
-        "city": "Vilnius",
+        "city": "Mažeikiai",
         "street": "Sofų g. 12"
       },
       "owner": {
-        "fullname": "Justas Peldžius",
-        "mobile": "868686868",
-        "address": "Justo g. 26",
-        "email": "justas@paštas.lt"
+        "fullname": "Sofius Čilauskas",
+        "mobile": "634634652",
+        "address": "Sofos g. 26",
+        "email": "sofiusčil@paštas.lt"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Bed",
+      "type": "Platform bed",
+      "price": 800,
+      "img": "https://www.naturalbedcompany.co.uk/wp-content/uploads/oak-kyoto-3Q-with-dark-grey-stockholm-bedspread.jpg",
+      "location": {
+        "country": "Lithuania",
+        "city": "Kaunas",
+        "street": "Lovų g. 96"
+      },
+      "owner": {
+        "fullname": "Lovius Guliauskas",
+        "mobile": "6323452543",
+        "address": "Lovio g. 34",
+        "email": "loviusgul@paštas.lt"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Desk",
+      "type": "Executive Desk",
+      "price": 3200,
+      "img": "https://cdn.arhaus.com/product/StandardV2/55ATHBLEXDK.jpg",
+      "location": {
+        "country": "Lithuania",
+        "city": "Šiauliai",
+        "street": "Stalų g. 42B"
+      },
+      "owner": {
+        "fullname": "Stalius Darbauskas",
+        "mobile": "6543563456",
+        "address": "Stalo g. 68",
+        "email": "staliusdar@paštas.lt"
       }
     }
   ]

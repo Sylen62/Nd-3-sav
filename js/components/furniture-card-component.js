@@ -9,10 +9,10 @@ class FurnitureCardComponent {
 		const card = document.createElement('div');
 		card.className = 'row g-o';
 		card.innerHTML = `
-      <div class="row g-0">
-      <div class="col-md-4">
-        <img src="${img}" class="img-fluid rounded-start" alt="...">
-      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="${img}" class="img-fluid rounded-start card-img">
+        </div>
       <div class="col-md-8">
         <div class="card-body">
           <div class="card-top">
@@ -23,17 +23,17 @@ class FurnitureCardComponent {
             <p>Type: ${type}</p>
             <p>Price: ${price} Euro</p>
           </div>
-          <div class="d-flex justify-content-evenly">
+          <div class="d-flex justify-content-between">
             <div>
               <h5 class="text-center">Location</h5>
               <p>Country: ${location.country}</p>
-              <p>City: ${location.city} Euro</p>
+              <p>City: ${location.city}</p>
               <p>Street: ${location.street}</p>
-              </div>
+            </div>
             <div>
               <h5 class="text-center">Owner</h5>
                 <p>Fullname: ${owner.fullname}</p>
-                <p>Address: ${owner.address} Euro</p>
+                <p>Address: ${owner.address}</p>
                 <p>Mobile: ${owner.mobile}</p>
                 <p>Email: ${owner.email}</p>
             </div>
