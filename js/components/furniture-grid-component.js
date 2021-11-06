@@ -23,9 +23,16 @@ class FurnitureGridComponent {
 		}, 1000);
 	};
 
+	// initializeFurnitureCards = () => {
+	// 	this.furnitureCards = this.state.furniture.map(
+	// 		(furniture) => new FurnitureCardComponent(furniture)
+	// 	);
+	// };
+
 	initialize = () => {
 		this.getFurniture();
 		this.htmlElement = document.createElement('div');
+
 		this.render();
 	};
 
@@ -35,6 +42,10 @@ class FurnitureGridComponent {
 			this.htmlElement.innerHTML = '<div class="text-center"><img src="assets/loading.gif"></div>';
 		} else {
 			this.htmlElement.innerHTML = '';
+			this.state.furniture.forEach((furniture) => {
+				const tempCard = new FurnitureCardComponent(furniture);
+				this.htmlElement.appendChild(tempCard.htmlElement);
+			});
 		}
 	};
 }
