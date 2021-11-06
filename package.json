@@ -1,0 +1,14 @@
+{
+  "name": "nd-3-sav",
+  "version": "1.0.0",
+  "description": "Baldų kortelės, naudojant json-server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Justas Peldžius",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}
