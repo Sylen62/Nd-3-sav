@@ -10,24 +10,33 @@ class FurnitureGridComponent {
 
 	getFurniture = () => {
 		this.state.loading = true;
-		setTimeout(() => {
-			API.getFurniture(
-				(furniture) => {
-					this.state.furniture = furniture;
-					this.state.loading = false;
-					this.render();
-					console.log(this.state.furniture);
-				},
-				(error) => console.error(error)
-			);
-		}, 1000);
+		API.getFurniture(
+			(furniture) => {
+				this.state.furniture = furniture;
+				this.state.loading = false;
+				this.render();
+			},
+			(error) => console.error(error)
+		);
 	};
 
-	// initializeFurnitureCards = () => {
-	// 	this.furnitureCards = this.state.furniture.map(
-	// 		(furniture) => new FurnitureCardComponent(furniture)
-	// 	);
-	// };
+	deleteFurniture = (id) => {
+		this.state.loading = true;
+		this.render();
+		API.deleteFurnitureById(
+			() =>
+				API.getFurniture(
+					(furniture) => {
+						this.state.furniture = furniture;
+						this.state.loading = false;
+						this.render();
+					},
+					(error) => console.error(error)
+				),
+			(error) => console.error(error),
+			id
+		);
+	};
 
 	initialize = () => {
 		this.getFurniture();
@@ -39,11 +48,16 @@ class FurnitureGridComponent {
 	render = () => {
 		const { loading } = this.state;
 		if (loading) {
+			this.htmlElement.className = '';
 			this.htmlElement.innerHTML = '<div class="text-center"><img src="assets/loading.gif"></div>';
 		} else {
+			this.htmlElement.className = 'card-grid';
 			this.htmlElement.innerHTML = '';
 			this.state.furniture.forEach((furniture) => {
-				const tempCard = new FurnitureCardComponent(furniture);
+				const tempCard = new FurnitureCardComponent({
+					data: furniture,
+					onDelete: this.deleteFurniture,
+				});
 				this.htmlElement.appendChild(tempCard.htmlElement);
 			});
 		}

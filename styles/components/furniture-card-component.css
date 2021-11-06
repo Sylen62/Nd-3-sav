@@ -1,0 +1,10 @@
+.card-top {
+	position: relative;
+}
+
+.btn-card {
+	position: absolute;
+	float: right;
+	top: 0;
+	right: 0;
+}
