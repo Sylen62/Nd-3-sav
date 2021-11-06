@@ -5,3 +5,7 @@
 
 @import 'components/furniture-grid-component.css';
 @import 'components/furniture-card-component.css';
+
+body {
+	background-color: #f1f1f1;
+}
