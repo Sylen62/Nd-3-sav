@@ -4,7 +4,9 @@
   "description": "Baldų kortelės, naudojant json-server",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-windows": "node_modules\\.bin\\json-server --watch db.json",
+    "start-unix": "node_modules/.bin/json-server --watch db.json"
   },
   "author": "Justas Peldžius",
   "license": "ISC",
